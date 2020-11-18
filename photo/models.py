@@ -2,10 +2,6 @@ from django.db import models
 
 # Create your models here.
 class Photo(models.Model):
-    title = models.CharField(max_length=120)
-    location = modelsfrom django.db import models
-
-class Photos(models.Model):
     name =models.CharField(max_length = 30)
     photo_description = models.TextField()
     photo_location = models.ForeignKey('Location', on_delete=models.SET_NULL, default = '', null=True)
